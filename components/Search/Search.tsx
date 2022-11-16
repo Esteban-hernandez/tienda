@@ -9,7 +9,6 @@ export default function Search() {
 
   const handleSearch = (e: any) => {
     setSearch(e.target.value)
-    console.log(e.target.value)
   }
 
   return (
@@ -21,6 +20,7 @@ export default function Search() {
         type="seach"
         className="bg-transparent w-full caret-current outline-none"
       />
+      
       <Link href="/search/[...search]" as={`search/${search}`}>
         <MagnifyingGlassIcon className="w-8 fill-slate-500" />
       </Link>

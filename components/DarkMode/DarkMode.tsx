@@ -26,16 +26,16 @@ export default function DarkMode() {
   return (
     <>
       {DarkMode ? (
+        <MoonIcon
+        onClick={DisableDarkMode}
+        className="w-8 mr-2 fill-slate-500"
+        aria-label="Boton modo claro"
+        />
+        ) : (
         <SunIcon
-          onClick={DisableDarkMode}
+          onClick={EnableDarkMode}
           className="w-8 text-yellow-300 mr-2"
           aria-label="Boton modo oscuro"
-        />
-      ) : (
-        <MoonIcon
-          onClick={EnableDarkMode}
-          className="w-8 mr-2 fill-slate-300"
-          aria-label="Boton modo claro"
         />
       )}
     </>
