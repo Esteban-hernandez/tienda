@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Normal';
+    src: url('/static/Font/Italic.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Medium';
+    src: url('/static/Font/MediumItalic.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Bold';
+    src: url('/static/Font/BoldItalic.woff') format('woff');
+  }
+  html {
+    transition: background-color ease-in-out 0.5
+  }
+
+  a {
+    @apply text-current font-RedHatNormal;
+    text-decoration: none;
+  }
+  img {
+    border-style: none;
+    max-width: 100%;
+  }
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    @apply font-RedHatBold m-0
+  }
+}
