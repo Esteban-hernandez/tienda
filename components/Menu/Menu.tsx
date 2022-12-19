@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export default function Menu() {
   return (
-    <nav className="fixed flex justify-around items-center bottom-0 bg-white dark:bg-slate-800 w-full p-2">
+    <nav className="fixed flex justify-around items-center bottom-0 bg-white dark:bg-slate-800 w-full p-2 z-10">
       <Link href={"/"} title="Inicio" className="flex items-center gap-2 text-3xl
       ">
         <HomeIcon className="w-8 fill-slate-500 dark:fill-slate-300" />
