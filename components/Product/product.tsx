@@ -1,17 +1,17 @@
-import { HeartIcon } from "@heroicons/react/24/solid";
+import { HeartIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 
 export default function Product() {
   return (
-    <div className="bg-white dark:bg-gray-800 relative rounded-lg overflow-hidden">
+    <div className="bg-white dark:bg-gray-800 relative rounded-lg overflow-hidden shadow-md shadow-black/50 dark:shadow-white/20">
       <div className="absolute top-0 left-0 m-1 bg-blue-500 p-1 rounded-tl-2xl rounded-br-2xl text-white font-bold italic ">
         50%
       </div>
-      <HeartIcon className="absolute top-0 right-0 m-1 w-4 fill-red-500" />
+      <HeartIcon className="absolute top-0 right-0 m-1 w-8 text-red-500" />
       <Image
-        className="bg-red-700 w-full"
+        className="w-full"
         alt="logo"
-        src="/table.webp"
+        src="https://picsum.photos/200"
         quality={100}
         width={500}
         height={500}
